@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Cost Calculator | Purple Queen Interiors</title>
+  <meta name="description" content="Calculate your home interior design costs instantly. Get itemized price estimates for 1BHK, 2BHK, 3BHK, and Villas from Purple Queen Interiors.">
+  <link rel="icon" type="image/jpeg" href="assets/images/purple-queen-logo.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo-wrap">
+          <img src="assets/images/purple-queen-logo.jpg" alt="Purple Queen Interiors Logo" class="brand-logo-img">
+        </a>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="modular-kitchens.html" class="nav-link">Modular Kitchens</a></li>
+          <li class="nav-item"><a href="living-rooms.html" class="nav-link">Living Rooms</a></li>
+          <li class="nav-item"><a href="estimate-calculator.html" class="nav-link active">Cost Calculator</a></li>
+          <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="tel:+919876543210" class="btn btn-outline-purple btn-sm">
+            <i data-lucide="phone" style="width:14px;"></i> Call Us
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CALCULATOR SECTION -->
+  <section class="section calculator-section" style="min-height:85vh; padding-top:50px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-gold">Interactive Tool</span>
+        <h2>Home Interior Cost <span class="serif-accent">Estimator</span></h2>
+        <p>Customize your rooms, select material finishes, and see instant pricing updates in real-time.</p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calc-steps">
+          <!-- Step 1: BHK -->
+          <div class="calc-step-group">
+            <h4><span class="calc-step-number">1</span> Choose Your Property Configuration:</h4>
+            <div class="calc-radio-grid">
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-bhk" value="1bhk">
+                <div class="calc-radio-box">1 BHK</div>
+              </label>
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-bhk" value="2bhk" checked>
+                <div class="calc-radio-box">2 BHK</div>
+              </label>
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-bhk" value="3bhk">
+                <div class="calc-radio-box">3 BHK</div>
+              </label>
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-bhk" value="villa">
+                <div class="calc-radio-box">4BHK / Villa</div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Tier -->
+          <div class="calc-step-group">
+            <h4><span class="calc-step-number">2</span> Choose Finish &amp; Material Package:</h4>
+            <div class="calc-radio-grid" style="grid-template-columns: repeat(3, 1fr);">
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-package" value="essential">
+                <div class="calc-radio-box">
+                  <div>Essential</div>
+                  <div style="font-size:0.75rem; opacity:0.8;">Premium Laminate</div>
+                </div>
+              </label>
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-package" value="elegance" checked>
+                <div class="calc-radio-box">
+                  <div>Elegance</div>
+                  <div style="font-size:0.75rem; opacity:0.8;">High Gloss Acrylic</div>
+                </div>
+              </label>
+              <label class="calc-radio-label">
+                <input type="radio" name="calc-package" value="royal">
+                <div class="calc-radio-box">
+                  <div>Royal Luxury</div>
+                  <div style="font-size:0.75rem; opacity:0.8;">Veneer &amp; PU Finish</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Scope -->
+          <div class="calc-step-group">
+            <h4><span class="calc-step-number">3</span> Select Spaces Included:</h4>
+            <div class="scope-checkbox-grid">
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="kitchen" checked>
+                <span>Modular Kitchen + Chimney</span>
+              </label>
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="living" checked>
+                <span>Living Room TV Unit &amp; Foyer</span>
+              </label>
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="master-bed" checked>
+                <span>Master Bed &amp; Side Tables</span>
+              </label>
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="wardrobes" checked>
+                <span>Floor-to-Ceiling Wardrobes</span>
+              </label>
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="ceiling" checked>
+                <span>False Ceiling &amp; Cove Lights</span>
+              </label>
+              <label class="scope-box">
+                <input type="checkbox" name="calc-scope" value="pooja">
+                <span>Pooja Mandir / Vanity Unit</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div class="calc-result-box">
+          <div class="calc-result-header">
+            <span class="badge-purple">Live Estimate</span>
+            <h3>Estimated Price Breakdown</h3>
+            <p>Includes complete design, manufacturing, hardware, delivery and installation.</p>
+          </div>
+
+          <div class="calc-price-display">
+            <div class="calc-price-label">Estimated Range</div>
+            <div class="calc-price-amount" id="calcPriceDisplay">₹5,20,000</div>
+            <div class="calc-price-emi" id="calcEmiDisplay">EMI starts from ₹15,900/month*</div>
+          </div>
+
+          <ul class="calc-breakdown-list">
+            <li><i data-lucide="check-circle-2" style="width:16px;"></i> 10-Year Warranty Certificate</li>
+            <li><i data-lucide="check-circle-2" style="width:16px;"></i> Guaranteed 45-Day Handover</li>
+            <li><i data-lucide="check-circle-2" style="width:16px;"></i> Free 3D Design Walkthrough</li>
+            <li><i data-lucide="check-circle-2" style="width:16px;"></i> 0% EMI Available with Top Banks</li>
+          </ul>
+
+          <button class="btn btn-gold btn-lg open-consultation-modal" style="width:100%;">
+            <span>Download Detailed PDF Quote</span>
+            <i data-lucide="download" style="width:18px;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top:0; border:none;">
+        <div>&copy; 2026 Purple Queen Interiors Pvt. Ltd. All Rights Reserved.</div>
+        <a href="index.html" style="color:var(--gold-light);">Back to Homepage &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONSULTATION MODAL -->
+  <div class="modal-overlay" id="consultationModal">
+    <div class="modal-content">
+      <button class="modal-close-btn">&times;</button>
+      <h3 style="font-size:1.5rem; margin-bottom:12px; text-align:center;">Get Your Personalized Estimate</h3>
+      <p style="font-size:0.88rem; color:var(--text-muted); text-align:center; margin-bottom:16px;">We will email and WhatsApp you the complete itemized quotation.</p>
+      <form>
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-input" required placeholder="10-digit mobile">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" required placeholder="you@domain.com">
+        </div>
+        <button type="submit" class="btn btn-gold btn-lg" style="width:100%;">Send Detailed Estimate</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
